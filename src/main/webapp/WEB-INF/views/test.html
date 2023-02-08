@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <p>TEST: Current time is <span th:text="${serverTime}" /></p> 
+    <tbody>
+        <tr th:each="num: ${nums}">
+            <td th:text="${num}"></td>
+            <br>
+        </tr>
+    </tbody>
+</body>
+</html>
