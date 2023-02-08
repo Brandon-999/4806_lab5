@@ -11,4 +11,9 @@ public class TestController {
 	public String message() {
 		return"---------Hello Spring Boot App------------";
 	}
+
+	@GetMapping("/bud")
+	public BuddyInfo bud() {
+		return new BuddyInfo("Brandon", "613-143-4234");
+	}
 }

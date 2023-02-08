@@ -38,4 +38,10 @@ public class AppTest {
 		assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/tst",
 				String.class)).contains("Current time");
 	}
+
+    @Test
+	public void testBuddy() throws Exception {
+		assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/bud",
+				String.class)).contains("Brandon");
+	}
 }
