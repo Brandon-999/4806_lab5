@@ -33,8 +33,8 @@ public class AppTest {
 				String.class)).contains("Hello Spring Boot App");
 	}
 
-	@org.junit.Test
-	public void tsetThymleafExample() throws Exception {
+	@Test
+	public void testThymleafExample() throws Exception {
 		assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/tst",
 				String.class)).contains("Current time");
 	}
